@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Avail Courses</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="mytest.css">
+</head>
+<body>
+	<header id="header">                                                  <!--  Header tag -->
+		<nav class="nav-bar" id="nav-bar">	
+		  <p id="response" class="message"></p>							 
+		  <a class="nav-link active" href="mytest.html">Signout</a>
+		</nav>
+	</header>
+	
+	<div class="container" id="course">
+		<h1>Courses</h1><hr class="new1"/>
+		<br/><br/>
+		<div class="row row-cols-1 row-cols-md-2">
+		  <div class="col mb-4">
+		    <div class="card">
+		      <img src="./assets/courses/blockdeveloper.webp" class="card-img-top courseimg" alt="...">
+		      <div class="card-body">
+		        <h5 class="card-title">Cerified Blockchain Developer</h5>
+		        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+		      </div>
+		      <button type="button" class="btn btn-success">Explore Course</button>
+		    </div>
+		  </div>
+		  <div class="col mb-4">
+		    <div class="card">
+		      <img src="./assets/courses/blockarchitect.webp" class="card-img-top courseimg" alt="...">
+		      <div class="card-body">
+		        <h5 class="card-title">Certified Blockchain Solution Architect</h5>
+		        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+		      </div>
+		      <button type="button" class="btn btn-success">Explore Course</button>
+		    </div>
+		  </div>
+		  <div class="col mb-4">
+		    <div class="card">
+		      <img src="./assets/courses/blockcorda.webp" class="card-img-top courseimg" alt="...">
+		      <div class="card-body">
+		        <h5 class="card-title">Certified Corda Developer</h5>
+		        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+		      </div>
+		      <button type="button" class="btn btn-success">Explore Course</button>
+		    </div>
+		  </div>
+		  <div class="col mb-4">
+		    <div class="card">
+		      <img src="./assets/courses/blockhyperledger.webp" class="card-img-top courseimg" alt="...">
+		      <div class="card-body">
+		        <h5 class="card-title">Certified Hyperledger Developer</h5>
+		        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+		      </div>
+		      <button type="button" class="btn btn-success">Explore Course</button>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<script>
+		window.onload = function() {
+				var received=localStorage.getItem("Name");
+				console.log(localStorage);
+				// console.log(received);
+				document.getElementById("response").innerHTML = "Welcome "+received;
+		}
+	</script>
+</body>
+</html>

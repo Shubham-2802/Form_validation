@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blockchain Technology</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="mytest.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<header id="header">                                                  <!--  Header tag -->
+		<nav class="nav-bar" id="nav-bar">								  <!-- Navigation tag -->
+		  <a class="nav-link active" href="#login">Login</a>
+		</nav>
+	</header>
+	<div class="container" id="login">
+		<h1>Log In</h1>
+		<form id="form" method="post" action="discount.html">
+			<fieldset>
+			  <div class="form-group">
+			    <label for="name">Name</label>
+			    <input type="text" class="form-control" id="name">
+			  </div>	
+			  <div class="form-group">
+			    <label>Email address</label>
+			    <input type="email" class="form-control" id="email">
+			  </div>
+			  <div class="form-group">
+			    <label>Password</label>
+			    <input type="password" class="form-control" id="password">
+			  </div>
+			  <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+			</fieldset>	  
+		</form>
+		<div id="errorresponse"></div>
+	</div>
+	<script src="mytest.js"></script>
+</body>
+</html>
